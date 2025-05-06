@@ -35,7 +35,20 @@ ul.menu {
     gap: 20px;
 }
 
-ul.menu {
-    color: pink;
-    text-decoration: none;
+
+
+ul.menu- {
+@import "bootstrap/scss/bootstrap";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto pointer grab,
+    )
+  )
+);
 }
