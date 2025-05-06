@@ -7,4 +7,6 @@
 
 nav {
     background-color: aquamarine;
+    padding: 10px 20px;
+    position: relative;
 }
