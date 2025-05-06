@@ -25,7 +25,7 @@ nav {
 
 .hamburguer span {
     height: 4px;
-    background: white;
+    background: rgb(226, 0, 0);
     border-radius: 2px;
 }
 
@@ -36,6 +36,6 @@ ul.menu {
 }
 
 ul.menu {
-    color: aliceblue;
+    color: pink;
     text-decoration: none;
 }
