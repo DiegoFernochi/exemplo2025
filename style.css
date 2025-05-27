@@ -51,26 +51,6 @@ h1 {
 
 }
 
-/*Responsivo*/
-@media (max-width:768px){
-.hamburger{
-    display: flex;
-    }
-ul.menu{
-    display:none;
-    flex-direction:column;
-background:#333;
-position:absolute;
-top:60px;
-left:0;
-width:100%;
-}
-
-.menu-toggle:checked
-+.hamburger + ul.menu{
-display: flex;
-}
-
 /* From Uiverse.io by Dailleer */ 
 .card {
   position: relative;
