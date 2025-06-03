@@ -264,13 +264,6 @@ footer {
     flex-direction: column;
   }
 
-  .menu {
-    flex-direction: column;
-    background-color: var(--branco);
-    padding: 10px;
-    display: none;
-  }
-
   .card {
   position: relative;
   height: 300px;
@@ -429,6 +422,13 @@ footer {
   transition-delay: 0.4s;
 }
 
+
+  .menu {
+    flex-direction: column;
+    background-color: var(--branco);
+    padding: 10px;
+    display: none;
+  }
 
   .menu li {
     margin: 10px 0;
