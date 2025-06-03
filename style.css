@@ -100,7 +100,38 @@ body {
   margin-top: 10px;
 }
 
+/* Importância */
+.importancia-imagem{
+    justify-self: end;
+    align-content: right;
+    width: 25%;
+    height: 450px;
+    
+}
 
+.importancia{
+    width: 100%;
+    height: 450px;
+    background-image:linear-gradient( #fdfdfd, #afec93) ;
+    color: rgb(28, 87, 1);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: 24px 0;
+    
+}
+
+
+.importancia2{
+    width: 100%;
+    height: 450px;
+    background-image:linear-gradient( #afec93, #fdfdfd) ;
+    color: rgb(28, 87, 1);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: 24px 0;
+}
 
 /* Novidades */
 .novidades {
