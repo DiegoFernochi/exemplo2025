@@ -369,6 +369,38 @@ footer {
   filter: brightness(0) invert(1);
 }
 
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .interacao-boxes {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    background-color: var(--branco);
+    padding: 10px;
+    display: none;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+}
+
 /* From Uiverse.io by vinodjangid07 */ 
 .Btn {
   width: 45px;
@@ -419,37 +451,4 @@ footer {
 .Btn:hover .svgContainer {
   background-color: rgba(156, 156, 156, 0.466);
   backdrop-filter: blur(4px);
-}
-
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-img {
-    width: 90%;
-  }
-
-  .cards-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .interacao-boxes {
-    flex-direction: column;
-  }
-
-  .menu {
-    flex-direction: column;
-    background-color: var(--branco);
-    padding: 10px;
-    display: none;
-  }
-
-  .menu li {
-    margin: 10px 0;
-  }
 }
