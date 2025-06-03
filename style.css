@@ -108,6 +108,15 @@ body {
   position: relative;
 }
 
+.container {
+   display: flex;
+   align-items: center; /* Alinha os elementos verticalmente no centro */
+}
+
+.texto-lateral {
+/* Estilos adicionais, como cor do texto, etc. */
+}
+
 /* From Uiverse.io by gharsh11032000 */ 
 .button {
   cursor: pointer;
