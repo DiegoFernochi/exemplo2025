@@ -1,277 +1,143 @@
-<html>
-    <head>
-        <title>DiguinDG</title>
-        <link rel="shortcut icon" type="image/x-icon" href="img/logo - Copia.jpg">
-        <meta
-        name="description"
-        content="Junte-se à nossa jornada de diversão e aprendizado, onde cada vídeo é uma nova aventura!"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link 
-        href="https://fonts.googleapis.com/css2family=Montserrant:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    </head>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-    <body>
-        <div class="fixed-top">
-        <header>
-            <a href="Site petshop.html">
-                <img src="img/logo.jpg" alt="Marca d'água" width="150" height="80" />
-            </a>
-            <nav>
-            <a href="#inicio">Início</a>
-            <a href="#conteudo">Sustentabilidade</a>
-            <a href="#portifolio">Reciclagem</a>
-            <a href="#duvidas">Dúvidas</a>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do Campo à Cidade | Agrinho 2025</title>
+
+    <!-- Fonte Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Estilo personalizado -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Biblioteca AOS (Animação ao rolar) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Áudio de clique -->
+    <audio id="click-sound" src="click.mp3" preload="auto"></audio>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container">
+            <img src="img/tulipa-logo.png" alt="Logo" class="logo" />
+            <ul class="menu">
+                <li><a href="#home" onclick="playClick()">Home</a></li>
+                <li><a href="#novidades" onclick="playClick()">Novidades</a></li>
+                <li><a href="#quem-somos" onclick="playClick()">Quem Somos</a></li>
+                <li><a href="#contato" onclick="playClick()">Contato</a></li>
+            </ul>
         </div>
+    </header>
 
-        <main> 
-            <main class="container">
-            <div style="padding: 150px 0px 30px 0px;">   
-                <section id="inicio">
-                     <div class="row">
-                        <div class="col" style="display: flex; justify-content: center;">
-                    <img src="sustentavel.jpg" alt="" width="380" height="380" />
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <img src="img/inicio.jpeg" alt="Agricultura" class="hero-img" data-aos="zoom-in" />
+        <div class="hero-content" data-aos="fade-left">
+            <h1>Do Campo à Cidade</h1>
+            <p>Conectando o agro ao urbano com inovação e oportunidade.</p>
+        </div>
+    </section>
+
+    <!-- Novidades com cards flip -->
+    <section class="novidades" id="novidades">
+        <h2 data-aos="fade-up">Novidades do Agro</h2>
+        <div class="cards-container">
+
+            <!-- Card 1 -->
+            <div class="card" data-aos="fade-up">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/Drone.jpeg" alt="Drone" />
+                        <p>Drone no Campo</p>
                     </div>
-                    
-                        <div class="col" >
-                        <h1>Sustentabilidade</h1>
-                        <p   p class="paragrafo" style="text-align: justify;">
-                            Sustentabilidade é uma forma de usar os recursos da natureza de maneira consciente e segura,
-                            dessa maneira cuidar, preservar e aproveitar a natureza.
-                            Lembrando que antes de pensar em utilizar todos os recursos do planeta, devemos rever o que temos para reutilizar.
-                            </p>
-       <div class="row">
-        <div class="col" style="display: flex; justify-content: start;">
-<button>
-    <a href="https://youtube.com/@diguindg?si=kJ9IvvngskLmRhwu" target="_blank"> 
-    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-instagram" x="0px" y="0px" width="36" height="36" viewBox="0 0 50 50" style="padding-right: 4px;">
-<path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 15 8 C 15.414 9.013 17.402 13.381141 18 14.994141 L 18 19 L 20 19 L 20 15 L 23 8 L 20.599609 8 L 19 12 L 17.400391 8 L 15 8 z M 25 11 C 23.994 11 23.228969 11.275313 22.667969 11.945312 C 22.234969 12.440312 22.001953 13.23425 22.001953 14.28125 L 22 15.726562 C 22 16.767563 22.205672 17.487516 22.638672 17.978516 C 23.200672 18.645516 24.111 19 25 19 C 25.889 19 26.815906 18.645562 27.378906 17.976562 C 27.804906 17.486562 28 16.767562 28 15.726562 L 28 14.275391 C 28 13.227391 27.758031 12.440312 27.332031 11.945312 C 26.770031 11.275313 25.889 11 25 11 z M 29 11 L 29 16.837891 C 29 17.497891 29.098281 17.946375 29.238281 18.234375 C 29.468281 18.707375 29.928844 18.949703 30.589844 18.970703 C 31.500844 19.000703 32.185 18.41 33 17.625 L 33 19 L 35 19 L 35 11 L 33 11 L 33 16.375 C 32.545 16.914 32.021375 17.392578 31.609375 17.392578 C 31.336375 17.392578 31.05 17.267 31 17 L 31 11 L 29 11 z M 25 12.619141 C 25.552 12.619141 26 13.076625 26 13.640625 L 26 16.447266 C 26 17.010266 25.552 17.46875 25 17.46875 C 24.448 17.46875 24 17.011266 24 16.447266 L 24 13.640625 C 24 13.077625 24.448 12.619141 25 12.619141 z M 24.990234 22 C 24.990234 22 18.280781 22.000312 13.800781 22.320312 C 13.170781 22.390313 11.809844 22.400391 10.589844 23.650391 C 9.6298437 24.590391 9.3203125 26.75 9.3203125 26.75 C 9.3203125 26.75 9 28.280547 9 30.810547 L 9 33.179688 C 9 35.709688 9.3203125 37.240234 9.3203125 37.240234 C 9.3203125 37.240234 9.6298438 39.399609 10.589844 40.349609 C 11.809844 41.589609 13.409141 41.549688 14.119141 41.679688 C 16.679141 41.919688 25 42 25 42 C 25 42 31.719219 41.989922 36.199219 41.669922 C 36.829219 41.599922 38.190156 41.589844 39.410156 40.339844 C 40.370156 39.399844 40.679688 37.240234 40.679688 37.240234 C 40.679688 37.240234 41 35.709688 41 33.179688 L 41 30.810547 C 41 28.280547 40.679688 26.75 40.679688 26.75 C 40.679688 26.75 40.370156 24.590391 39.410156 23.650391 C 38.190156 22.400391 36.829219 22.390312 36.199219 22.320312 C 31.719219 22.000312 25.009766 22 25.009766 22 L 24.990234 22 z M 12 26 L 18 26 L 18 28 L 16 28 L 16 38 L 14 38 L 14 28 L 12 28 L 12 26 z M 25 26 L 27 26 L 27 30.380859 C 27.75 29.500859 28.149141 28.99 29.119141 29 C 29.879141 29.01 30.490234 29.440703 30.740234 30.220703 C 30.870234 30.640703 31 31.390859 31 32.380859 L 31 35.130859 C 30.99 36.010859 30.899297 36.400313 30.779297 36.820312 C 30.529297 37.600313 29.879141 38 29.119141 38 C 28.449141 38 27.63 37.53 27 36.75 L 27 38 L 25 38 L 25 26 z M 18 29 L 20 29 L 20 35.890625 C 20.05 36.180625 20.259531 36.289062 20.519531 36.289062 C 20.919531 36.289062 21.56 35.849531 22 35.269531 L 22 29 L 24 29 L 24 38 L 22 38 L 22 36.630859 C 21.21 37.490859 20.269062 38 19.539062 38 C 18.899062 38 18.450469 37.720937 18.230469 37.210938 C 18.100469 36.890937 18 36.409453 18 35.689453 L 18 29 z M 35.029297 29 C 36.019297 29 36.809375 29.319922 37.359375 29.919922 C 37.769375 30.359922 38 31.040469 38 31.980469 L 38 34 L 34 34 L 34 35.800781 C 34 36.260781 34.45 36.640625 35 36.640625 C 35.55 36.640625 36 36.260781 36 35.800781 L 36 35 L 38 35 C 38 35.51 37.939687 35.939609 37.929688 36.099609 C 37.859687 36.449609 37.700938 36.770781 37.460938 37.050781 C 36.920938 37.690781 36.110078 38 35.080078 38 C 34.040078 38 33.259453 37.699609 32.689453 37.099609 C 32.269453 36.669609 32 36.010078 32 35.080078 L 32 32.019531 C 32 31.079531 32.239922 30.359922 32.669922 29.919922 C 33.239922 29.319922 34.019297 29 35.029297 29 z M 35 30.449219 C 34.45 30.449219 34 30.819062 34 31.289062 L 34 32.609375 L 36 32.609375 L 36 31.289062 C 36 30.819063 35.55 30.449219 35 30.449219 z M 28.220703 30.75 C 28.065703 30.75 27.839531 30.827813 27.613281 30.945312 C 27.500156 31.004062 27.386406 31.072422 27.28125 31.146484 C 27.176094 31.220547 27.08 31.300859 27 31.380859 L 27 35.75 C 27.08 35.83 27.176094 35.904063 27.28125 35.96875 C 27.596719 36.162813 27.988203 36.279297 28.220703 36.279297 C 28.423203 36.279297 28.581836 36.22998 28.703125 36.111328 C 28.743555 36.071777 28.780625 36.024062 28.8125 35.96875 C 28.87625 35.858125 28.922187 35.714609 28.953125 35.533203 C 28.984063 35.351797 29 35.131641 29 34.869141 L 29 32.130859 C 29 31.868359 28.984063 31.649297 28.953125 31.470703 C 28.89125 31.113516 28.767187 30.913047 28.570312 30.818359 C 28.471875 30.771016 28.355703 30.75 28.220703 30.75 z"></path>
-</svg>
-<span>Inscreva-se</span>
-</a>
-</button>
-        </div>
-        <div class="col" style="display: flex; justify-content: end;">
-<button>
-    <a href="https://www.instagram.com/diego_fernochi/?igsh=MXVwcXc2ZHoxM3FtbQ%3D%3D#" target="_blank">
-  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
-    <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
-</svg>  
-  <span>Instragram</span>
-  </a>
-</button>
-        </div>
-       </div>                     
-
-
-
-
-                        </div> 
-                     </div>
-                </section>
-            </div> 
-
-         <section id="conteudo">
-            <div class="row"> 
-                <div class="col"> 
-                    <h2>Reciclagem e Economia</h2>
-                    <p class="paragrafo" style="text-align: justify;">
-                    Reciclagem é uma forma de reutilizar materiais já usados - como papel, vidro,
-                    plástico e metal - e dessa forma utilizar em novos produtos.
-                    Dessa maneira evita que esses materiais virem lixo,
-                    com isso não é necessário ficar extraindo recursos naturais da Terra.
-                    
-                    </p>
-                </div>
-                <div class="col" style="display: flex; justify-content: center;">
-                    <img src="reciclagem.webp" alt="" width="470" height="450" Loading="lazy"/>
-                </div>
-            </div>       
-         </section>
-
-         <section id="portifolio">
-            <div class="container">
-            <h2>Aqui Estão Algumas das Thumbnails Mais Famosas do Canal</h2>
-            <p class="paragrafo">
-                Essas são algumas das capas dos vídeos com mais cliques.
-            </p>
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/01.png" class="d-block w-100" alt="01" style="max-height: 600">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/02.png" class="d-block w-100" alt="02" style="max-height: 600">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/03.png" class="d-block w-100" alt="03" style="max-height: 600">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        
-            </div>
-         </section>
-
-         <section id="duvidas">
-            <div class="row"> 
-                <div class="col" style="display: flex; justify-content: center;">
-            <img src="img/duvida.jpg" alt="" width="480" height="400" loading="lazy"/>
-                </div>
-                <div class="col">
-            <h2>Ficou alguma dúvida?</h2>
-                
-                <div class="duvida">
-                    <h3>Qual a meta principal do canal?</h3>
-                    <img src="img/arrow-down.svg" alt="" />
-                    <p class="paragrafo">
-                       Atingir o máximo de pessoas possíveis e levar sorrisos,
-                       alegria e diversão para todos os espectadores.
-                    </p>
-                </div>
-                <div class="duvida">
-                    <h3>Qual o objetivo com o canal?</h3>
-                    <img src="img/arrow-down.svg" alt="" />
-                    <p class="paragrafo">
-                      Ajudar e divertir todos os jovens, adolescentes e até mesmo aos adultos que assitem ao conteúdo,
-                      pretendo fazer parcerias com marcas e outros influenciadores de nichos diferentes.
-                    </p>
-                </div>
-            
-                <div class="duvida">
-                    <h3>Quanto tempo por dia me dedico à criação de conteúdo para o canal?</h3>
-                    <img src="img/arrow-down.svg" alt="" />
-                    <p class="paragrafo">
-                      Não tem um tempo especifíco, porém os vídeos são parcialmente gravados
-                      nos finais de semanas, as thumbnails são criadas após os vídeos serem finalizados.
-                    </p>
-                </div>
-                
-                <div class="duvida">
-                    <h3>Quais são seus youtubers ou criadores de conteúdo favoritos?
-                        Eles influenciam de alguma forma o seu trabalho?</h3>
-                    <img src="img/arrow-down.svg" alt="" />
-                    <p class="paragrafo">
-                       Meus criadores de conteúdo favoritos são:
-                       Rezendeevil, Edukof, Jazzghost dentre vários outros.
-                       Eles influenciam o meu trabalho, pois a partir deles, acabo me inspirando 
-                       para criar meus vídeos. 
-                    </p>
+                    <div class="card-back">
+                        <h3>Drones monitoram plantações, detectam falhas e aplicam insumos com precisão.</h3>
                     </div>
-            </div>
-            </section>
-            </div>
-        </main>
-        
-        
-            <main>
-            <footer>
-                <div>
-                    <img src="img/logo.jpg" alt="Marca d'água" width="150" height="80" />
-                    <p>
-                        Combinando diversão e inovação, os vídeos são criados de forma com que
-                        os espectadores possam se divertir e se alegrar.
-                    </p>
                 </div>
-                <div>
-                    <strong class="titulo">Links rápidos</strong>
-                    <nav>
-                        <a href="#inicio">Start</a>
-                        <a href="#conteudo">Conteudo</a>
-                        <a href="#portifolio">Séries</a>
-                        <a href="#duvidas">Dúvidas</a>
-                    </nav>
-                </div>
-                <div>
-                    <strong class="titulo"></strong>
-                    <!-- From Uiverse.io by Ashon-G --> 
-<div class="card">
-  <div class="boxshadow"></div>
-  <div class="main">
-    <div class="top"></div>
-    <div class="left side"></div>
-    <div class="right side"></div>
-    <div class="title">Encontre</div>
-    <div class="button-container">
-      <button class="button">
-        <svg
-          class="svg"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke="green"
-          fill="none"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-        </svg>
-      </button>
-      <button class="button">
-        <svg
-          class="svg twitter"
-          xmlns="http://www.w3.org/2000/svg"
-          height="24"
-          width="24"
-          fill="green"
-          viewBox="0 0 512 512"
-        >
-          <path
-            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-          ></path>
-        </svg>
-      </button>
-      <button class="button">
-        <svg
-          class="svg"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="red"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path
-            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-          ></path>
-          <path d="M9 18c-4.51 2-5-2-7-2"></path>
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
+            </div>
 
+            <!-- Card 2 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/Trator.jpeg" alt="Trator" />
+                        <p>Trator Moderno</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Tratores inteligentes otimizam colheitas, economizam tempo e recursos.</h3>
+                    </div>
                 </div>
-            </footer>
             </div>
-            </main>
-            <div id="copyright">
-                Desenvolvido por
-                <a href="https://github.com/" target="_blank">                  
-                    @diego e beatriz</a>.
-                    <p>Equipe do canal: DiguinDG</p>
+
+            <!-- Card 3 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/campo e cidade.jpeg" alt="Campo e Cidade" />
+                        <p>Conexão Campo-Cidade</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Fortalecendo laços entre produtores e consumidores urbanos.</h3>
+                    </div>
+                </div>
             </div>
-           <script src="DG.js"></script>
-           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    </body>
+
+            <!-- Card 4 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/Semente.jpeg" alt="Semente" />
+                        <p>Valor da Semente</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Sementes de qualidade garantem colheitas saudáveis e produtivas.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Interação -->
+    <section class="interacao" id="quem-somos">
+        <h2 data-aos="fade-down">Compartilhe, Interaja e Cresça</h2>
+        <div class="interacao-boxes">
+            <div class="interacao-box" onclick="playClick()" data-aos="zoom-in">Compartilhar Criação</div>
+            <div class="interacao-box" onclick="playClick()" data-aos="zoom-in" data-aos-delay="100">Interesse em Cursos</div>
+            <div class="interacao-box" onclick="playClick()" data-aos="zoom-in" data-aos-delay="200">Buscar Apoio Técnico</div>
+        </div>
+    </section>
+
+    <!-- Parallax Section -->
+    <div class="parallax" data-aos="fade-in"></div>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <div class="footer-content">
+            <p>&copy; 2025 Tulipas Negócio. Todos os direitos reservados.</p>
+            <div class="socials">
+                <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+                <a href="#"><img src="img/linkedin.png" alt="LinkedIn" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function playClick() {
+            const audio = document.getElementById('click-sound');
+            if (audio) {
+                audio.play();
+            }
+        }
+    </script>
+</body>
+
 </html>
