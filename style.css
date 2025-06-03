@@ -103,6 +103,8 @@ body {
 /* Importâncias */
 .importancias {
   padding: 50px 20px;
+  background-color: var(--branco);
+  text-align: center;
 }
 
 /* Novidades */
