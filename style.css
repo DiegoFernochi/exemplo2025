@@ -100,7 +100,10 @@ body {
   margin-top: 10px;
 }
 
-/* Importância */
+/* Importâncias */
+.importancias {
+  padding: 50px 20px;
+}
 
 /* Novidades */
 .novidades {
