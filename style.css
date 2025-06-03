@@ -111,7 +111,6 @@ body {
 .container {
    display: flex;
    align-items: center; /* Alinha os elementos verticalmente no centro */
-   background: #4CAF50;
 }
 
 .texto-lateral {
