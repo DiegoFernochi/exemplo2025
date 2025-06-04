@@ -412,8 +412,18 @@ footer {
   transition-duration: .3s;
 }
 
+.footer-content .socials {
+  margin-top: 15px;
+}
+
+.footer-content img {
+  width: 24px;
+  margin: 0 10px;
+  filter: brightness(0) invert(1);
+}
+
 /* From Uiverse.io by akshayjalluri6 */ 
-.container {
+.footer-content .container {
   display: flex;
 }
 
@@ -502,16 +512,6 @@ footer {
   fill: white;
 }
 
-
-.footer-content .socials {
-  margin-top: 15px;
-}
-
-.footer-content img {
-  width: 24px;
-  margin: 0 10px;
-  filter: brightness(0) invert(1);
-}
 
 /* Responsivo */
 @media (max-width: 768px) {
