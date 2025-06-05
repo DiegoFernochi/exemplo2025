@@ -1,136 +1,40 @@
-*{margin: 0;
-    padding: 0;
+/*Site todo*/
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
-:root { 
-    --cor-de-fundo: #e4e6e7;
-    --branco: #FFFFFF;
-    --laranja: #E89800;
-    --vermelho: #be1f07;
-    --fonte-principal: "Poppins";
-    --preto: #000000;
-    --amarelo: #f6f7c7;
+/*Corpo*/
+body {
+  color: #263138;
 }
-
-.body { 
-    background-color: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.cabecalho{
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-around;
-    padding: 24px 0;
+/*Cabeçalho*/
+header {
+   background-color: #6d35c284;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 80px;
+   padding-right: 80px;
+   padding-top: 24px;
+   padding-bottom: 24px;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #f5fff5;
-    color: rgb(255, 240, 240);
-    text-align: right;
-    padding: 10px 0;
-    z-index: 1000;
+header nav a {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 32px;
+  text-decoration: none;
 }
 
-.logo{
-    float:inline-start;
-    border-radius: 50%;
-    box-shadow: #bfe79f 0px 0px 10px;
-    transition: 0.5s;
-    width: 3%;
-    border-radius: 22px;
-    height: 3%;
+#inicio {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 24px 80px 128px 80px;
+  position: relative;
 }
-
-.logo:hover {
-    transition: 0.5s;
-    box-shadow: #a8d692 0px 0px 20px;
-}
-
-
-.Informação-texto-um{
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    margin: auto;
-    padding:20px 0;
-}
-
-.Informação-texto-dois {
-    font-size: 20px;
-}
-
-.Informação-texto-tres {
-    display:inline-block;
-    font-size: 20px;
-
-}
-
-.agricultura-imagem2{
-    justify-self: end;
-    align-content: right;
-    width: 25%;
-    height: 450px;
-}
-
-.cabecalho-lista-item{
-    justify-content: center;
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 28px;
-}
-
-.cabecalho-lista-item a{
-    justify-content: end;
-    text-decoration: none;
-    color:rgb(49, 139, 69);
-}
-
-a:hover {
-    color: #37ec00;
-}
-
-a:active{
-    color: rgb(2, 245, 83);
-
-}
-
-.agricultura-imagem{
-    justify-self: end;
-    align-content: right;
-    width: 25%;
-    height: 450px;
-    
-}
-
-.agricultura{
-    width: 100%;
-    height: 450px;
-    background-image:linear-gradient( #fdfdfd, #afec93) ;
-    color: rgb(28, 87, 1);
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    padding: 24px 0;
-    
-}
-
-
-.agricultura2{
-    width: 100%;
-    height: 450px;
-    background-image:linear-gradient( #afec93, #fdfdfd) ;
-    color: rgb(28, 87, 1);
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    padding: 24px 0;
-}
-
 
 /* From Uiverse.io by gharsh11032000 */ 
 .button {
@@ -226,162 +130,89 @@ button:hover::before {
   box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
 }
 
-.informação-div-conteudo{
-    width: 45%;
+h1,
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 32px;
 }
 
-.Agro-titulo{
-    padding:24px 0;
-    font-size: 35px;
+.paragrafo {
+  line-height: 150%;
+  margin-bottom: 32px;
+  font-size: 20px;
 }
 
-.tipo__imagem {
-    height: 200px;
-    width: 200px;
-    border-radius: 30px;
-    background: rgb(173, 172, 171); 
+.absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
 }
 
-.principal__box {
-    background-color: var(--branco);
-    height: 400px;
-    width: 950px;
-    margin: auto;
+#conteudo {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 64px 80px;
 }
 
-.titulo {
-    color: var(--preto) ;
-    text-align: center;
-    padding: 1em;
-    font-weight: 700;
-    
+#portifolio {
+  padding: 64px 80px;
+  text-align: center;
 }
 
-.box{
-   background: transparent;
-   display: inline-flex;  
-}
- 
-.box__content{
-    background: transparent;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateY(0deg);
-    transition: transform 600ms ease-in-out; 
-    margin: 3em 1em; 
+#portifolio .paragrafo {
+  max-width: 950px;
+  margin: 0 auto;
 }
 
-.box__front, 
-.box__back {
-    position: absolute;
-    backface-visibility: hidden;   
+#duvidas {
+  display: flex;
+  align-items: center;
+  gap: 74px;
+  padding: 64px 80px 64px 15px;
 }
 
-.box__back{
-    background: rgb(173, 172, 171);
-    width: 200px;
-    height: 240px;
-    border-radius: 30px;
-    transform: rotateY(180deg);
-   
+.duvida {
+  position: relative;
 }
 
-.box:hover .box__content {
-    transform: rotateY(180deg);
-    
+.duvida h3 {
+  border: 2px solid #3c1a70;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 24px;
 }
 
-/*para colocar o efeito na borda*/
-
-  .caixa {
-   margin: auto;
-    position: relative;
-    width: 50px;
-    height: 20px;
-    color: #151320;
-    background: #fff;
-    display: flex;
-   justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    font-weight: 700;
+.duvida img {
+  position: absolute;
+  top: 32px;
+  right: 24px;
 }
 
-.caixa::before, .caixa::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: calc(100% + 5px);
-    height: calc(100% + 5px);
-    background: linear-gradient(45deg, #c3c4c4, #979696, #646364, 
-    #839a9f, #d7d8d8, #9f9f9f, #939292, #646364);
-    background-size: 300%;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    border-radius: 10px;
-    animation: AnimarBorda 4s linear infinite;
-    
+.duvida .paragrafo {
+  border-right: 1px solid #3c1a70;
+  border-bottom:  1px solid #3c1a70;
+  border-left:  1px solid #3c1a70;
+  border-radius: 0 0 8px 8px;
+  margin-top: -8px;
+  padding: 0 24px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.2s;
 }
 
-@keyframes AnimarBorda {
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: 300%;
-    }
-}
-.caixa::after {
-    filter: blur(5px);
+.duvida.ativa .paragrafo {
+  height: fit-content;
+  opacity: 1;
+  padding: 24px;
 }
 
-.caixa {
-    margin: auto;
-     position: relative;
-     width: 50px;
-     height: 20px;
-     color: #151320;
-     background: #fff;
-     display: flex;
-    justify-content: center;
-     align-items: center;
-     border-radius: 3px;
-     font-weight: 700;
- }
- 
- .caixa::before, .caixa::after {
-     content: '';
-     position: absolute;
-     z-index: -1;
-     width: calc(100% + 5px);
-     height: calc(100% + 5px);
-     background: linear-gradient(45deg, #128686, #8d1313, #646364, 
-     #839a9f, #d7d8d8, #881111, #939292, #b91bb9);
-     background-size: 300%;
-     background-repeat: no-repeat;
-     background-position: 100%;
-     border-radius: 10px;
-     animation: AnimarBorda 4s linear infinite;
-     
- }
- 
- @keyframes AnimarBorda {
-     0% {
-         background-position: 0;
-     }
-     100% {
-         background-position: 300%;
-     }
- }
- .caixa::after {
-     filter: blur(5px);
- }
- 
 footer {
-  background-color: #2e8b57;
+  background-color: #6d35c284;
   display: flex;
   justify-content: space-between;
   gap: 80px;
@@ -406,166 +237,6 @@ footer p {
   margin-bottom: 16px;
   max-width: 350px;
 }
-
-/* From Uiverse.io by Ashon-G */ 
-.card {
-  position: relative;
-  height: 300px;
-  width: 230px;
-}
-.card:nth-child(2) {
-  filter: hue-rotate(300deg) brightness(1.3);
-}
-.card:nth-child(3) {
-  filter: hue-rotate(200deg) brightness(1.5);
-}
-.card:nth-child(4) {
-  filter: hue-rotate(60deg) brightness(3);
-}
-.card .boxshadow {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border: 1px solid rgb(0, 217, 255);
-  transform: scale(0.8);
-  box-shadow: rgb(0, 217, 255) 0px 30px 70px 0px;
-  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.card .main {
-  width: 230px;
-  height: 300px;
-  overflow: hidden;
-  background: rgb(0, 255, 149);
-  background: linear-gradient(
-    0deg,
-    #3e0000 0%,
-    rgb(0, 247, 255) 60%,
-    #3e0000 100%
-  );
-  position: relative;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 40px,
-    100% calc(100% - 40px),
-    calc(100% - 40px) 100%,
-    40px 100%,
-    0 calc(100% - 40px)
-  );
-  box-shadow: rgb(0, 132, 255) 0px 7px 29px 0px;
-  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.card .main .top {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 0px;
-  height: 0px;
-  z-index: 2;
-  border-top: 115px solid black;
-  border-left: 115px solid transparent;
-  border-right: 115px solid transparent;
-  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.card .main .side {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  transform: translateX(-50%);
-  height: 101%;
-  background: black;
-  clip-path: polygon(0% 0%, 50% 0, 95% 45%, 100% 100%, 0% 100%);
-  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s;
-}
-.card .main .left {
-  left: 0;
-}
-.card .main .right {
-  right: 0;
-  transform: translateX(50%) scale(-1, 1);
-}
-.card .main .title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 90px;
-  font-weight: bold;
-  font-size: 25px;
-  opacity: 0;
-  z-index: -1;
-  transition: all 0.2s ease-out 0s;
-}
-.card .main .button-container {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.card .main .button-container .button {
-  position: absolute;
-  transform: translateX(-50%);
-  padding: 5px 10px;
-  clip-path: polygon(0 0, 100% 0, 81% 100%, 21% 100%);
-  background: black;
-  border: none;
-  color: white;
-  display: grid;
-  place-content: center;
-  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.card .main .button-container .button .svg {
-  width: 15px;
-  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.card .main .button-container .button:nth-child(1) {
-  bottom: 300px;
-  transition-delay: 0.4s;
-}
-.card .main .button-container .button:nth-child(2) {
-  bottom: 300px;
-  transition-delay: 0.6s;
-}
-.card .main .button-container .button:nth-child(3) {
-  bottom: 300px;
-  transition-delay: 0.8s;
-}
-.card .main .button-container .button:hover .svg {
-  transform: scale(1.2);
-}
-.card .main .button-container .button:active .svg {
-  transform: scale(0.7);
-}
-.card:hover .main {
-  transform: scale(1.1);
-}
-.card:hover .main .top {
-  top: -50px;
-}
-.card:hover .main .left {
-  left: -50px;
-  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.1s;
-}
-.card:hover .main .right {
-  right: -50px;
-  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.1s;
-}
-.card:hover .main .title {
-  opacity: 1;
-  transition: all 0.2s ease-out 1.3s;
-}
-.card:hover .main .button-container .button:nth-child(1) {
-  bottom: 80px;
-  transition-delay: 0.8s;
-}
-.card:hover .main .button-container .button:nth-child(2) {
-  bottom: 40px;
-  transition-delay: 0.6s;
-}
-.card:hover .main .button-container .button:nth-child(3) {
-  bottom: 0;
-  transition-delay: 0.4s;
-}
-
 
 #copyright {
   background-color: #263138;
