@@ -27,7 +27,7 @@ header nav a {
   text-decoration: none;
 }
 
-/* Sessão Início */
+/* Seção Início */
 #inicio {
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@ header nav a {
   position: relative;
 }
 
-/* Botão estilizado (Uiverse.io - gharsh11032000) */
+/* Botão dourado estilizado */
 .button {
   cursor: pointer;
   position: relative;
@@ -47,7 +47,7 @@ header nav a {
   border-radius: 34px;
   background-color: transparent;
   font-weight: 600;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
   overflow: hidden;
 }
 
@@ -62,7 +62,7 @@ header nav a {
   scale: 0;
   z-index: -1;
   background-color: rgb(193, 163, 98);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .button:hover::before {
@@ -79,7 +79,7 @@ header nav a {
   scale: 1;
 }
 
-/* Botão alternativo (Uiverse.io - JaydipPrajapati1910) */
+/* Botão azul com efeito */
 button {
   background: transparent;
   position: relative;
@@ -106,7 +106,7 @@ button span {
 button::before {
   position: absolute;
   top: 0;
-  left: -5em;
+  left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -115,6 +115,7 @@ button::before {
   display: block;
   width: 20em;
   height: 20em;
+  left: -5em;
   text-align: center;
   transition: box-shadow 0.5s ease-out;
   z-index: -1;
@@ -129,22 +130,20 @@ button:hover::before {
   box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
 }
 
-/* Títulos */
-h1,
-h2 {
+/* Títulos e parágrafos */
+h1, h2 {
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 32px;
 }
 
-/* Parágrafo padrão */
 .paragrafo {
   line-height: 150%;
   margin-bottom: 32px;
   font-size: 20px;
 }
 
-/* Imagem absoluta no fundo */
+/* Imagem decorativa */
 .absolute {
   position: absolute;
   bottom: 0;
@@ -153,7 +152,7 @@ h2 {
   z-index: -10;
 }
 
-/* Sessão Conteúdo */
+/* Seção Conteúdo */
 #conteudo {
   display: flex;
   align-items: center;
@@ -161,7 +160,7 @@ h2 {
   padding: 64px 80px;
 }
 
-/* Sessão Portfólio */
+/* Seção Portfólio */
 #portifolio {
   padding: 64px 80px;
   text-align: center;
@@ -172,7 +171,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* Sessão Dúvidas */
+/* Seção Dúvidas */
 #duvidas {
   display: flex;
   align-items: center;

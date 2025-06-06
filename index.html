@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <title>DiguinDG</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo - Copia.jpg">
-    <meta name="description" content="Junte-se à nossa jornada de diversão e aprendizado, onde cada vídeo é uma nova aventura!">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="fixed-top">
-        <header class="d-flex justify-content-between align-items-center p-3 bg-light">
-            <a href="Site petshop.html">
-                <img src="img/logo.jpg" alt="Marca d'água" width="150" height="80" />
-            </a>
-            <nav>
-                <a href="#inicio" class="mx-2">Start</a>
-                <a href="#conteudo" class="mx-2">Conteúdo</a>
-                <a href="#portifolio" class="mx-2">Séries</a>
-                <a href="#duvidas" class="mx-2">Dúvidas</a>
-            </nav>
-        </header>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#conteudo">Conteúdo</a>
+      <a href="#portifolio">Portfólio</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+  </header>
+
+  <!-- Seção Início -->
+  <section id="inicio">
+    <div>
+      <h2>Bem-vindo ao meu site!</h2>
+      <p class="paragrafo">Aqui você encontra informações sobre meus projetos e muito mais.</p>
+      <button class="button">Saiba Mais</button>
     </div>
+    <img src="imagem-inicio.png" alt="Imagem de Início" width="300">
+    <img class="absolute" src="fundo-decorativo.png" alt="Fundo Decorativo">
+  </section>
 
-    <main class="container" style="padding-top: 150px;">
-        <section id="inicio">
-            <div class="row mb-5">
-                <div class="col d-flex justify-content-center">
-                    <img src="img/eu (2).jpg" alt="Foto de perfil" width="380" height="380" />
-                </div>
-                <div class="col">
-                    <h1>União do Campo e a Cidade</h1>
-                    <p class="paragrafo text-justify">
-                        A importância da junção do campo e da cidade é essencial para o futuro da sociedade. O campo produz os alimentos, matérias-primas e nos proporciona uma grande diversidade como a cultura. Contemporaneamente o campo tem evoluído constantemente: hospitais, escolas e mais acessibilidade com a internet. Já a cidade gera uma enorme oportunidade para os moradores do campo, pois têm mais indústrias e comércios. Além disso, a cidade pode se linkar ao campo para garantir uma inovação, fornecendo toda a acessibilidade possível.
-                    </p>
-                    <div class="row mt-4">
-                        <div class="col d-flex justify-content-start">
-                            <a href="https://youtube.com/@diguindg?si=kJ9IvvngskLmRhwu" target="_blank" class="btn btn-danger d-flex align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="me-2" viewBox="0 0 16 16">
-                                    <path d="M8.051 1.999c-2.127 0-3.156.022-4.26.065-1.133.043-2.007.242-2.69.942-.682.7-.899 1.587-.942 2.709C.025 6.84 0 7.867 0 9s.022 2.156.065 3.26c.043 1.133.242 2.007.942 2.69.7.682 1.587.899 2.709.942 1.104.043 2.133.065 4.26.065s3.156-.022 4.26-.065c1.133-.043 2.007-.242 2.69-.942.682-.7.899-1.587.942-2.709.043-1.104.065-2.133.065-4.26s-.022-3.156-.065-4.26c-.043-1.133-.242-2.007-.942-2.69-.7-.682-1.587-.899-2.709-.942C11.207 2.021 10.178 1.999 8.051 1.999zM6.545 11.437V6.563L10.818 9l-4.273 2.437z"/>
-                                </svg>
-                                Inscreva-se
-                            </a>
-                        </div>
-                        <div class="col d-flex justify-content-end">
-                            <a href="https://www.instagram.com/diego_fernochi/?igsh=MXVwcXc2ZHoxM3FtbQ%3D%3D#" target="_blank" class="btn btn-primary d-flex align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="me-2" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.056 2.003.24 2.465.403a4.924 4.924 0 0 1 1.675 1.09 4.924 4.924 0 0 1 1.09 1.675c.163.462.347 1.259.403 2.465.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.206-.24 2.003-.403 2.465a4.92 4.92 0 0 1-1.09 1.675 4.922 4.922 0 0 1-1.675 1.09c-.462.163-1.259.347-2.465.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.206-.056-2.003-.24-2.465-.403a4.932 4.932 0 0 1-1.675-1.09 4.932 4.932 0 0 1-1.09-1.675c-.163-.462-.347-1.259-.403-2.465C2.175 15.748 2.163 15.368 2.163 12s.012-3.584.07-4.85c.056-1.206.24-2.003.403-2.465a4.92 4.92 0 0 1 1.09-1.675 4.92 4.92 0 0 1 1.675-1.09c.462-.163 1.259-.347 2.465-.403C8.416 2.175 8.796 2.163 12 2.163zM12 0C8.741 0 8.333.013 7.053.07 5.78.127 4.737.316 3.89.635c-.867.326-1.604.764-2.34 1.5C.265 3.871-.174 4.608.01 5.475c.319.847.508 1.89.565 3.163.057 1.28.07 1.688.07 5.037s-.013 3.757-.07 5.037c-.057 1.273-.246 2.316-.565 3.163-.184.867.265 1.604 1.01 2.34.736.736 1.473 1.174 2.34 1.5.847.319 1.89.508 3.163.565 1.28.057 1.688.07 5.037.07s3.757-.013 5.037-.07c1.273-.057 2.316-.246 3.163-.565.867-.184 1.604-.736 2.34-1.5.736-.736 1.174-1.473 1.5-2.34.319-.847.508-1.89.565-3.163.057-1.28.07-1.688.07-5.037s-.013-3.757-.07-5.037c-.057-1.273-.246-2.316-.565-3.163-.184-.867-.736-1.604-1.5-2.34-.736-.736-1.473-1.174-2.34-1.5-.847-.319-1.89-.508-3.163-.565C15.757.013 15.368 0 12 0z"/>
-                                    <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zM18.406 4.594a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
-                                </svg>
-                                Instagram
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <!-- Seção Conteúdo -->
+  <section id="conteudo">
+    <img src="imagem-conteudo.png" alt="Imagem de Conteúdo" width="300">
+    <div>
+      <h2>Conteúdo</h2>
+      <p class="paragrafo">Compartilho conhecimentos, experiências e dicas sobre programação, design e muito mais.</p>
+      <button><span>Explorar</span></button>
+    </div>
+  </section>
 
-        <section id="conteudo">
-            <div class="row">
-                <div class="col">
-                    <h2>Planos para o futuro</h2>
-                    <p class="paragrafo text-justify">
-                        Atualmente, meu canal é dedicado principalmente a jogos, com ênfase em Minecraft e seus mods. No entanto, estou planejando expandir o conteúdo para incluir vlogs, trazendo uma abordagem mais pessoal e diversificada ao público. Essa mudança visa aproximar ainda mais minha comunidade, compartilhando o meu dia a dia e os bastidores das gameplays.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <!-- Seção Portfólio -->
+  <section id="portifolio">
+    <h2>Portfólio</h2>
+    <p class="paragrafo">Veja alguns dos meus principais projetos realizados até hoje.</p>
+    <img src="projeto1.png" alt="Projeto 1" width="250">
+    <img src="projeto2.png" alt="Projeto 2" width="250">
+  </section>
+
+  <!-- Seção Dúvidas Frequentes -->
+  <section id="duvidas">
+    <div class="duvida">
+      <h3>Como posso entrar em contato?</h3>
+      <img src="seta.png" alt="Seta">
+      <p class="paragrafo">Você pode me enviar uma mensagem através do formulário de contato ou pelas redes sociais.</p>
+    </div>
+    <div class="duvida">
+      <h3>Quais serviços você oferece?</h3>
+      <img src="seta.png" alt="Seta">
+      <p class="paragrafo">Ofereço desenvolvimento web, design gráfico, consultorias e muito mais.</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer">
+      <img src="logo.png" alt="Logo" width="100">
+      <p class="titulo">Meu Site</p>
+      <p>Obrigado por visitar! Siga nas redes sociais para mais novidades.</p>
+    </div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#conteudo">Conteúdo</a>
+      <a href="#portifolio">Portfólio</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+  </footer>
+
+  <div id="copyright">
+    <p>© 2025 Meu Site. Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
+  </div>
+
 </body>
 </html>
