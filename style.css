@@ -1,24 +1,23 @@
-/*Site todo*/
+/* Site todo */
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
-/*Corpo*/
+
+/* Corpo */
 body {
   color: #263138;
 }
-/*Cabeçalho*/
+
+/* Cabeçalho */
 header {
-   background-color: #6d35c284;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding-left: 80px;
-   padding-right: 80px;
-   padding-top: 24px;
-   padding-bottom: 24px;
+  background-color: #6d35c284;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 80px;
 }
 
 header nav a {
@@ -28,6 +27,7 @@ header nav a {
   text-decoration: none;
 }
 
+/* Sessão Início */
 #inicio {
   display: flex;
   align-items: center;
@@ -36,18 +36,18 @@ header nav a {
   position: relative;
 }
 
-/* From Uiverse.io by gharsh11032000 */ 
+/* Botão estilizado (Uiverse.io - gharsh11032000) */
 .button {
   cursor: pointer;
   position: relative;
   padding: 10px 24px;
   font-size: 18px;
-  color: rgba(193, 163, 98,);
+  color: rgb(193, 163, 98);
   border: 2px solid rgb(193, 163, 98);
   border-radius: 34px;
   background-color: transparent;
   font-weight: 600;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   overflow: hidden;
 }
 
@@ -62,7 +62,7 @@ header nav a {
   scale: 0;
   z-index: -1;
   background-color: rgb(193, 163, 98);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .button:hover::before {
@@ -72,14 +72,14 @@ header nav a {
 .button:hover {
   color: #212121;
   scale: 1.1;
-  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
 }
 
 .button:active {
   scale: 1;
 }
 
-/* From Uiverse.io by JaydipPrajapati1910 */ 
+/* Botão alternativo (Uiverse.io - JaydipPrajapati1910) */
 button {
   background: transparent;
   position: relative;
@@ -106,7 +106,7 @@ button span {
 button::before {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -5em;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -115,7 +115,6 @@ button::before {
   display: block;
   width: 20em;
   height: 20em;
-  left: -5em;
   text-align: center;
   transition: box-shadow 0.5s ease-out;
   z-index: -1;
@@ -123,13 +122,14 @@ button::before {
 
 button:hover {
   color: #fff;
-  border: 1px solid rgb(255,0,0);
+  border: 1px solid rgb(255, 0, 0);
 }
 
 button:hover::before {
   box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
 }
 
+/* Títulos */
 h1,
 h2 {
   font-weight: 600;
@@ -137,12 +137,14 @@ h2 {
   margin-bottom: 32px;
 }
 
+/* Parágrafo padrão */
 .paragrafo {
   line-height: 150%;
   margin-bottom: 32px;
   font-size: 20px;
 }
 
+/* Imagem absoluta no fundo */
 .absolute {
   position: absolute;
   bottom: 0;
@@ -151,6 +153,7 @@ h2 {
   z-index: -10;
 }
 
+/* Sessão Conteúdo */
 #conteudo {
   display: flex;
   align-items: center;
@@ -158,6 +161,7 @@ h2 {
   padding: 64px 80px;
 }
 
+/* Sessão Portfólio */
 #portifolio {
   padding: 64px 80px;
   text-align: center;
@@ -168,6 +172,7 @@ h2 {
   margin: 0 auto;
 }
 
+/* Sessão Dúvidas */
 #duvidas {
   display: flex;
   align-items: center;
@@ -194,8 +199,8 @@ h2 {
 
 .duvida .paragrafo {
   border-right: 1px solid #3c1a70;
-  border-bottom:  1px solid #3c1a70;
-  border-left:  1px solid #3c1a70;
+  border-bottom: 1px solid #3c1a70;
+  border-left: 1px solid #3c1a70;
   border-radius: 0 0 8px 8px;
   margin-top: -8px;
   padding: 0 24px;
@@ -211,6 +216,7 @@ h2 {
   padding: 24px;
 }
 
+/* Rodapé */
 footer {
   background-color: #6d35c284;
   display: flex;
@@ -238,6 +244,7 @@ footer p {
   max-width: 350px;
 }
 
+/* Copyright */
 #copyright {
   background-color: #263138;
   color: #ffffff;
