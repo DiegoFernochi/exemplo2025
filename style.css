@@ -1,23 +1,24 @@
-/* Site todo */
+/*Site todo*/
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
-
-/* Corpo */
+/*Corpo*/
 body {
   color: #263138;
 }
-
-/* Cabeçalho */
+/*Cabeçalho*/
 header {
-  background-color: #6d35c284;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px 80px;
+   background-color: #6d35c284;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 80px;
+   padding-right: 80px;
+   padding-top: 24px;
+   padding-bottom: 24px;
 }
 
 header nav a {
@@ -27,7 +28,6 @@ header nav a {
   text-decoration: none;
 }
 
-/* Seção Início */
 #inicio {
   display: flex;
   align-items: center;
@@ -36,13 +36,13 @@ header nav a {
   position: relative;
 }
 
-/* Botão dourado estilizado */
+/* From Uiverse.io by gharsh11032000 */ 
 .button {
   cursor: pointer;
   position: relative;
   padding: 10px 24px;
   font-size: 18px;
-  color: rgb(193, 163, 98);
+  color: rgba(193, 163, 98,);
   border: 2px solid rgb(193, 163, 98);
   border-radius: 34px;
   background-color: transparent;
@@ -72,14 +72,14 @@ header nav a {
 .button:hover {
   color: #212121;
   scale: 1.1;
-  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
 }
 
 .button:active {
   scale: 1;
 }
 
-/* Botão azul com efeito */
+/* From Uiverse.io by JaydipPrajapati1910 */ 
 button {
   background: transparent;
   position: relative;
@@ -123,15 +123,15 @@ button::before {
 
 button:hover {
   color: #fff;
-  border: 1px solid rgb(255, 0, 0);
+  border: 1px solid rgb(255,0,0);
 }
 
 button:hover::before {
   box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
 }
 
-/* Títulos e parágrafos */
-h1, h2 {
+h1,
+h2 {
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 32px;
@@ -143,7 +143,6 @@ h1, h2 {
   font-size: 20px;
 }
 
-/* Imagem decorativa */
 .absolute {
   position: absolute;
   bottom: 0;
@@ -152,7 +151,6 @@ h1, h2 {
   z-index: -10;
 }
 
-/* Seção Conteúdo */
 #conteudo {
   display: flex;
   align-items: center;
@@ -160,7 +158,6 @@ h1, h2 {
   padding: 64px 80px;
 }
 
-/* Seção Portfólio */
 #portifolio {
   padding: 64px 80px;
   text-align: center;
@@ -171,7 +168,6 @@ h1, h2 {
   margin: 0 auto;
 }
 
-/* Seção Dúvidas */
 #duvidas {
   display: flex;
   align-items: center;
@@ -198,8 +194,8 @@ h1, h2 {
 
 .duvida .paragrafo {
   border-right: 1px solid #3c1a70;
-  border-bottom: 1px solid #3c1a70;
-  border-left: 1px solid #3c1a70;
+  border-bottom:  1px solid #3c1a70;
+  border-left:  1px solid #3c1a70;
   border-radius: 0 0 8px 8px;
   margin-top: -8px;
   padding: 0 24px;
@@ -215,7 +211,6 @@ h1, h2 {
   padding: 24px;
 }
 
-/* Rodapé */
 footer {
   background-color: #6d35c284;
   display: flex;
@@ -243,7 +238,6 @@ footer p {
   max-width: 350px;
 }
 
-/* Copyright */
 #copyright {
   background-color: #263138;
   color: #ffffff;
