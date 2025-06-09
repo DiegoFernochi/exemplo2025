@@ -1,250 +1,139 @@
-/*Site todo*/
+/* Reset e base */
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
-/*Corpo*/
+
 body {
+  background: linear-gradient(135deg, #a8e063, #56ab2f); /* verde vibrante */
   color: #263138;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-/*Cabeçalho*/
+
+/* Cabeçalho */
 header {
-   background-color: #6d35c284;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding-left: 80px;
-   padding-right: 80px;
-   padding-top: 24px;
-   padding-bottom: 24px;
+  background: rgba(33, 87, 40, 0.85); /* verde escuro semi-transparente */
+  color: #f0f5f1;
+  padding: 2rem 4rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  border-radius: 0 0 40px 40px;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+header p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  letter-spacing: 1.5px;
 }
 
 header nav a {
-  color: #ffffff;
+  color: #d9f7be;
   font-weight: 600;
-  padding: 32px;
+  margin: 0 1rem;
   text-decoration: none;
-}
-
-#inicio {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  padding: 24px 80px 128px 80px;
-  position: relative;
-}
-
-/* From Uiverse.io by gharsh11032000 */ 
-.button {
-  cursor: pointer;
-  position: relative;
-  padding: 10px 24px;
-  font-size: 18px;
-  color: rgba(193, 163, 98,);
-  border: 2px solid rgb(193, 163, 98);
-  border-radius: 34px;
-  background-color: transparent;
-  font-weight: 600;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
-  overflow: hidden;
-}
-
-.button::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 50px;
-  height: 50px;
-  border-radius: inherit;
-  scale: 0;
-  z-index: -1;
-  background-color: rgb(193, 163, 98);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.button:hover::before {
-  scale: 3;
-}
-
-.button:hover {
-  color: #212121;
-  scale: 1.1;
-  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
-}
-
-.button:active {
-  scale: 1;
-}
-
-/* From Uiverse.io by JaydipPrajapati1910 */ 
-button {
-  background: transparent;
-  position: relative;
-  padding: 5px 15px;
-  display: flex;
-  align-items: center;
-  font-size: 17px;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  border: 1px solid rgb(0, 26, 255);
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
   border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+  background-color: #d9f7be;
+  color: #205214;
+  box-shadow: 0 0 10px #d9f7be;
   outline: none;
-  overflow: hidden;
-  color: rgb(43, 0, 255);
-  transition: color 0.3s 0.1s ease-out;
-  text-align: center;
 }
 
-button span {
-  margin: 10px;
+/* Main */
+main {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+  flex-grow: 1;
 }
 
-button::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  content: '';
-  border-radius: 50%;
-  display: block;
-  width: 20em;
-  height: 20em;
-  left: -5em;
-  text-align: center;
-  transition: box-shadow 0.5s ease-out;
-  z-index: -1;
+/* Seções */
+section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-button:hover {
-  color: #fff;
-  border: 1px solid rgb(255,0,0);
+section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-button:hover::before {
-  box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+section h2 {
+  font-size: 2rem;
+  color: #2c5d27;
+  margin-bottom: 1.2rem;
+  border-bottom: 3px solid #a8e063;
+  padding-bottom: 0.3rem;
 }
 
-h1,
-h2 {
-  font-weight: 600;
-  font-size: 32px;
-  margin-bottom: 32px;
-}
-
-.paragrafo {
-  line-height: 150%;
-  margin-bottom: 32px;
-  font-size: 20px;
-}
-
-.absolute {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: -10;
-}
-
-#conteudo {
-  display: flex;
-  align-items: center;
-  gap: 64px;
-  padding: 64px 80px;
-}
-
-#portifolio {
-  padding: 64px 80px;
-  text-align: center;
-}
-
-#portifolio .paragrafo {
-  max-width: 950px;
-  margin: 0 auto;
-}
-
-#duvidas {
-  display: flex;
-  align-items: center;
-  gap: 74px;
-  padding: 64px 80px 64px 15px;
-}
-
-.duvida {
-  position: relative;
-}
-
-.duvida h3 {
-  border: 2px solid #3c1a70;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 24px;
-}
-
-.duvida img {
-  position: absolute;
-  top: 32px;
-  right: 24px;
-}
-
-.duvida .paragrafo {
-  border-right: 1px solid #3c1a70;
-  border-bottom:  1px solid #3c1a70;
-  border-left:  1px solid #3c1a70;
-  border-radius: 0 0 8px 8px;
-  margin-top: -8px;
-  padding: 0 24px;
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: 0.2s;
-}
-
-.duvida.ativa .paragrafo {
-  height: fit-content;
-  opacity: 1;
-  padding: 24px;
-}
-
-footer {
-  background-color: #6d35c284;
-  display: flex;
-  justify-content: space-between;
-  gap: 80px;
-  padding: 64px 80px;
-}
-
-footer img,
-.footer .titulo {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
-
-footer nav a {
+section p {
+  font-size: 1.125rem;
   color: #263138;
-  display: block;
-  margin-bottom: 16px;
-  text-decoration: none;
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
-footer p {
-  margin-bottom: 16px;
-  max-width: 350px;
-}
-
-#copyright {
-  background-color: #263138;
-  color: #ffffff;
-  padding: 24px;
+/* Footer */
+footer {
+  background-color: #205214;
+  color: #d9f7be;
   text-align: center;
+  padding: 1.5rem 1rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.25);
+  user-select: none;
 }
 
-#copyright a {
-  color: #a16af3;
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.2rem;
+  }
+  
+  header nav a {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  main {
+    padding: 0 1rem;
+  }
+  
+  section {
+    padding: 2rem 1.5rem;
+  }
 }
