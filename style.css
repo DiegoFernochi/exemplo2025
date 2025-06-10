@@ -275,33 +275,6 @@ h2 {
   padding: 24px;
 }
 
-footer {
-  background-color: #6d35c284;
-  display: flex;
-  justify-content: space-between;
-  gap: 80px;
-  padding: 64px 80px;
-}
-
-footer img,
-.footer .titulo {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
-
-footer nav a {
-  color: #263138;
-  display: block;
-  margin-bottom: 16px;
-  text-decoration: none;
-}
-
-footer p {
-  margin-bottom: 16px;
-  max-width: 350px;
-}
-
 /* From Uiverse.io by akshayjalluri6 */ 
 .container {
   display: flex;
@@ -392,6 +365,33 @@ footer p {
   fill: white;
 }
 
+
+footer {
+  background-color: #6d35c284;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 64px 80px;
+}
+
+footer img,
+.footer .titulo {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+footer nav a {
+  color: #263138;
+  display: block;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+footer p {
+  margin-bottom: 16px;
+  max-width: 350px;
+}
 
 #copyright {
   background-color: #263138;
