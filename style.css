@@ -76,7 +76,7 @@ button span {
  letter-spacing: 3px;
  text-align: center;
  transform: translate(-50%,-50%);
- color: black;
+ color: #2bc21d84;
  transition: all 2s ease;
 }
 
@@ -89,7 +89,7 @@ button:before {
  position: absolute;
  width: 0;
  height: 100%;
- background-color: black;
+ background-color: #2bc21d84;
  left: 50%;
  top: 50%;
  transform: translate(-50%, -50%);
